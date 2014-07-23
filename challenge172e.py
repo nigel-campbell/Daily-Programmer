@@ -14,10 +14,24 @@ def mapFileToDict():
 				currentMapping += ('0 ' + line)
 	return letterMappings
 
-def getLineFromString():
-	pass
+def getLineFromString(lineNumber, string):
+	line = ''
+	currentLine = 0
+	for char in string:
+		if char == '\n':
+			currentLine += 1
+			continue
+		if currentLine == lineNumber:
+			line+=char
+		if currentLine != lineNumber:
+			continue
+	line += ' '
+	return line
+
 def constructOutput():
-	pass
+	inputString = inputString.upper()
+	output = ''
+	
 def writeStringToPBM():
 	pass
 def main():
