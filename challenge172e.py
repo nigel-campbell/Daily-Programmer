@@ -1,5 +1,7 @@
 # Daily Programmer Challenge #172 (www.reddit.com/r/dailyprogrammer)
 
+# Challenge Description:
+
 # A portable bitmap is one of the oldest image formats around and grants access to very simple image creation and sharing.
 # Today, you will be creating an image of this format.
 # A simple PBM program can be seen here[1] (Note that we'll be creating the simplest version, a PBM, not PPM or PGM.)
@@ -8,12 +10,12 @@
 # 2 integers denoting the Width and Height of our image file respectively
 # And finally, our pixel data - Whether a pixel is 1 - Black or 0 - White.
 
-# See link for details
+# See link for details:
 # http://www.reddit.com/r/dailyprogrammer/comments/2ba3g3/7212014_challenge_172_easy/
 
 def mapFileToDict():
 	letterMappings = {}
-	fileName = 'font.txt'
+	fileName = 'TestFolder/font.txt'
 	currentLetter = 'A'
 	currentMapping = ''
 	with open(fileName) as fontMappings:
