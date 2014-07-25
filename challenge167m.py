@@ -1,3 +1,25 @@
+# Daily Programmer Challenge #167m (www.reddit.com/r/dailyprogrammer)
+
+# Challenge Description: 
+
+# It is that time of year again. The Intro to Computer Science 101 
+# class has ended at Greendale community college and the professor 
+# has to submit the final grades. The school requires grades to be 
+# submitted with a letter grade. In addition the grades should be 
+# submitted from the "best" student first. The individual scores 
+# should be be listed from "worse" to "best".
+
+# Challenge Details:
+
+# The output should be ranked from the "best" student who had the best 
+# grade to the "worse" student who had the lowest grade. The 5 scores
+# should also be arranged from the "lowest" to "highest".
+# The output should take on this form:
+# (Last Name) (First Name) (Final percentage) (Final Grade) : (Scores 1-5 from low to high)
+
+# See link for details:
+# http://www.reddit.com/r/dailyprogrammer/comments/28gq9b/6182014_challenge_167_intermediate_final_grades/
+
 import re
 
 def interpretLine(line):
