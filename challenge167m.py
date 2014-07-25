@@ -48,7 +48,7 @@ def computeFinalAverages(gradebook):
 		finalAverage = sum( studentInfo[1] ) / float( len(studentInfo[1]) )
 		finalLetterGrade = calculateLetterGrade(finalAverage)
 		finalAverages.append( (studentInfo, finalAverage, finalLetterGrade) )
-	finalAverages.sort( key=lambda finalAverages: finalAverage[1], reverse = True )
+	finalAverages.sort( key=lambda final: final[1], reverse = True )
 	return finalAverages
 
 def printOutputToFile(finalAverages, writePath):
